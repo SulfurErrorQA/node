@@ -307,7 +307,7 @@ if "_%VisualStudioVersion%_" == "_15.0_" if "_%VSCMD_ARG_TGT_ARCH%_"=="_%target_
 set "VSINSTALLDIR="
 @rem prevent VsDevCmd.bat from changing the current working directory
 set "VSCMD_START_DIR=%CD%"
-set vcvars_call="%VCINSTALLDIR%\Auxiliary\Build\vcvarsall.bat" %vcvarsall_arg%  -vcvars_ver=14.16
+set vcvars_call="%VCINSTALLDIR%\Auxiliary\Build\vcvarsall.bat" %vcvarsall_arg%
 echo calling: %vcvars_call%
 call %vcvars_call%
 if errorlevel 1 goto msbuild-not-found
