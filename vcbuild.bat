@@ -224,7 +224,7 @@ if errorlevel 1 goto vs-set-2015
 :found_vs2017
 echo Found MSVS version %VisualStudioVersion%
 set GYP_MSVS_VERSION=2017
-set PLATFORM_TOOLSET=v141
+set PLATFORM_TOOLSET=v141_xp
 goto msbuild-found
 
 @rem Look for Visual Studio 2015
