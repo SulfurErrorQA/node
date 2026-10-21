@@ -314,7 +314,7 @@ if defined DEBUG_HELPER @ECHO ON
 :found_vs2017
 echo Found MSVS version %VisualStudioVersion%
 set GYP_MSVS_VERSION=2017
-set PLATFORM_TOOLSET=v141
+set PLATFORM_TOOLSET=v141_xp
 goto msbuild-found
 
 :msbuild-not-found
